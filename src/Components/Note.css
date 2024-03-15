@@ -1,0 +1,61 @@
+
+.note-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 20px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    
+    background-color: #ffffff;
+  }
+  .note-text-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    
+  }
+  .note-text {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    color: #333;
+  }
+  .date-time {
+    display: flex;
+    font-family: "Roboto";
+    justify-content: flex-end;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: black;
+  }
+  .date {
+    font-size: 14px; /* Smaller font size for the date */
+    font-weight: 500;
+    color: #333;
+    margin-right: 15px;
+  }
+  
+  .time {
+    font-size: 14px; /* Smaller font size for the date */
+    font-weight: 500;
+    color: #333;
+  }
+  p{
+    font-size: 30px; 
+    font-weight: 500;
+    color: #333;
+    margin-right: 15px;
+    margin-top: -5px;
+  }
+  

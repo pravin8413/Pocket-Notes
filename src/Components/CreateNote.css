@@ -1,0 +1,99 @@
+.root-container {
+    background-color: #ffffff;
+    width: 28vw;
+    height: 28vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    border-radius: 6px;
+    border: 2px solid #CCCCCC;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 20px;
+    z-index: 3;
+
+}
+
+.groupName-card {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.group-name-text {
+    width: 16vw;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-left: 20px;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+    background-color: #ffffff;
+    color: black;
+    outline: none;
+    padding-left: 15px;
+}
+
+.create-button{
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+    position: absolute;
+    float: right;
+    right: 2%;
+    bottom: 3%;
+    background-color: blue;
+    color: #ffffff;
+}
+.color-input{
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+}
+.colors-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.color{
+    width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  margin-left: 12px;
+}
+.color-input-1{
+    background-color: #B38BFA;
+}
+.color-input-2{
+    background-color: #FF79F2;
+}
+.color-input-3{
+    background-color: #43E6FC;
+}
+.color-input-4{
+    background-color: #F19576;
+}
+.color-input-5{
+    background-color: #0047FF;
+}
+.color-input-6{
+    background-color: #6691FF;
+}
+.highlight{
+    border: 2px solid black;
+    border-radius: 6vh;
+}

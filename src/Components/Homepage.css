@@ -1,0 +1,211 @@
+.root {
+    background-color: #DAE5F5;
+    width: 72vw;
+    position: absolute;
+    height: 100vh;
+    right: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+   
+}
+.home-container{
+    width: 72vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+    background-color: #DAE5F5;
+    /* z-index: 1; */
+}
+
+.header-note {
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    height: 5vw;
+    width: auto;
+    position: sticky;
+    background: whitesmoke;
+    text-transform: capitalize;
+    background-color: blue;
+  } 
+  .title-logo{
+    
+        font-family: "Roboto";
+        color: black;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: capitalize;
+        border-radius: 50%;
+        height: 8vh;
+        width: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+       background-color: gray;
+        padding: 5px;
+  }
+  .header-note-title {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin: 10px;
+    margin-left: 15px;
+    color: #ffffff;
+  }
+  .notes-display{
+    width: auto;
+    overflow-y: scroll;
+  }
+  .notes-display::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  
+  .notes-display::-webkit-scrollbar-track {
+    background: transparent; }
+  
+  
+  .notes-display::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  .type-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 72vw;
+    height: 200px;
+    bottom: 0;
+    background: blue;
+  }
+  .note-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    color: black;
+    width: 60vw;
+    min-height: 150px; /* Use min-height to allow for text expansion */
+    max-height: 150px; /* Set a maximum height to enable scrolling when needed */
+    border-radius: 9px;
+    border: 1px solid #cccccc;
+    font-family: Roboto;
+    font-size: 18px; /* Reduced font size for better text input experience */
+    font-weight: 400;
+    line-height: 1.5; /* Adjust line-height for better spacing */
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 10px; /* Add padding for better visual appearance */
+    resize: vertical; /* Enable vertical resizing for text input */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the max-height */
+    word-wrap: break-word; /* Automatically wrap long words to the next line */
+    overflow-wrap: break-word; /* Automatically wrap long words to the next line */
+  }
+  .send {
+    position: absolute;
+    width: 34px;
+    height: 29px;
+    bottom: 15%;
+    right: 10%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: url(send.png);
+    color: black;
+  }
+  .send:focus{
+    outline: none;
+    /* transform: scale(1.1); */
+  }
+
+.root-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 72vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #DAE5F5;
+    /* z-index: 1; */
+}
+
+.img-container {
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(back.png);
+    background-size: cover;
+    background-position: center;
+    width: 45vw;
+    height: 330px;
+    /* top: 237px; */
+}
+
+.txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+   
+
+}
+.pn {
+    margin-left: 18%;
+    width: 310px;
+    height: 59px;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+.info-txt {
+    width: 500px;
+    height: 64px;
+    font-family: "Roboto";
+    font-size: 18.5px;
+    font-weight: 400;
+    text-align: left;
+    /* margin-top: 2%; */
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.lock-logo {
+    margin-right: 10px;
+    background-image: url(lock.png);
+    width: 17px;
+    height: 21px;
+
+}
+
+.endtext {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}

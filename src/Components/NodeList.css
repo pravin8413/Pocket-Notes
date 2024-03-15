@@ -1,0 +1,47 @@
+.note-title-list {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 15vh;
+    width: 26vw;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+    
+}
+
+.note-title-list.clicked {
+    /* padding: 10px;
+    border-radius: 30% 0% 0% 30%; */
+    background: #f7ecdc;
+}
+
+.logo {
+    font-family: "Roboto";
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 50%;
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+
+}
+.note-title{
+    font-family: "roboto";
+    font-size: 2rem;
+    color: black;
+    margin-left: 3rem;
+    text-transform: capitalize;
+}
