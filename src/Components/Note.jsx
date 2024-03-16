@@ -14,13 +14,13 @@ const Note = () => {
                         </div>
                         <div className='date-time'>
                             <div className='date'>{item.date}</div>
-                            <p>.</p>
+                            <small>.</small>
                             <div className='time'>{item.time}</div>
                         </div>
                     </div>
                 ))
             ) : (
-                <p>Add some notes</p>
+                <p>Add some notes ...</p>
             )
             } 
 

@@ -51,11 +51,15 @@
     font-weight: 500;
     color: #333;
   }
-  p{
+  small{
     font-size: 30px; 
     font-weight: 500;
     color: #333;
     margin-right: 15px;
     margin-top: -5px;
+  }
+  p{
+    font-size: 22px;
+    margin: 15px;
   }
   
