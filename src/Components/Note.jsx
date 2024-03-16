@@ -20,7 +20,7 @@ const Note = () => {
                     </div>
                 ))
             ) : (
-                <p></p>
+                <p>Add some notes</p>
             )
             } 
 
