@@ -10,9 +10,11 @@ export default function App(){
   return (
     <>
    <NoteContextProvider>
+   <div className='parent'>
     <SideBar/>
    
     <Homepage/>
+    </div>
     </NoteContextProvider>
     </>
   )

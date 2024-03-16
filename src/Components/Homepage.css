@@ -15,9 +15,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* overflow-y: scroll; */
     background-color: #DAE5F5;
-    /* z-index: 1; */
 }
 
 .header-note {
@@ -29,7 +27,7 @@
     position: sticky;
     background: whitesmoke;
     text-transform: capitalize;
-    background-color: blue;
+    background-color: rgba(48, 48, 208);
   } 
   .title-logo{
     
@@ -53,7 +51,7 @@
   }
   .header-note-title {
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0.03em;
@@ -65,6 +63,7 @@
   .notes-display{
     width: auto;
     overflow-y: scroll;
+    height: 70vh;
   }
   .notes-display::-webkit-scrollbar {
     width: 5px;
@@ -80,11 +79,12 @@
   }
   .type-container {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
     width: 72vw;
-    height: 200px;
+    height: 25vh;
     bottom: 0;
     background: blue;
   }
@@ -114,8 +114,8 @@
     position: absolute;
     width: 34px;
     height: 29px;
-    bottom: 15%;
-    right: 10%;
+    bottom: 3%;
+    right: 9%;
     cursor: pointer;
     border: none;
     outline: none;
@@ -125,7 +125,7 @@
   }
   .send:focus{
     outline: none;
-    /* transform: scale(1.1); */
+
   }
 
 .root-container{
@@ -137,6 +137,7 @@
     height: 100vh;
     position: absolute;
     background-color: #DAE5F5;
+    color: black;
     /* z-index: 1; */
 }
 
@@ -167,7 +168,7 @@
     height: 59px;
     font-family: "Roboto";
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 59px;
     letter-spacing: 0.02em;
     text-align: left;
@@ -207,5 +208,6 @@
     line-height: 32px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: black;
 
 }

@@ -6,7 +6,7 @@ export default function CreateNote() {
 
     const [groupName, setGroupName] = useState("");
     const [bgColor, setBgColor] = useState("");
-    const {groupTitles, setGroupTitles} = useNoteContext();
+    const {groupTitles, setGroupTitles,setBcolor, setDisplayTitle,isCreateNoteVisible, setCreateNoteVisible} = useNoteContext();
     
     const handleChange = (e) => {
         setGroupName(e.target.value);
@@ -22,8 +22,21 @@ export default function CreateNote() {
             alert("Please Selecct Note Color");
             return;
         }
-        const hide = document.getElementById("root-container");
+        for (var i = 0; i < groupTitles.length; i++) {
+            if (groupTitles[i].name.toLowerCase() === groupName.toLowerCase()) {
+                alert("Group Title already exists");
+                return;
+            }
+        }
+
+        const hide = document.getElementById("create-note");
         hide.style.display = "none";
+        
+        if(isCreateNoteVisible)
+        {
+            setCreateNoteVisible(false);
+        }
+
 
         const newGroup = { name: groupName, color: bgColor };
         const updatedGroupNames = [...groupTitles, newGroup];
@@ -32,6 +45,8 @@ export default function CreateNote() {
 
         setGroupName(""); // Clear the input field
         setBgColor("");   // Clear the bgColor field
+        setDisplayTitle(groupName);
+        setBcolor(bgColor);
 
     }
     const handleColor = (e) => {
@@ -42,7 +57,7 @@ export default function CreateNote() {
     
 
     return (
-        <div className='root-container' id='root-container'>
+        <div className='create-note' id='create-note'>
             <h3>Create New group</h3>
             <div className='groupName-card'>
                 <label htmlFor="group-name">Group Name</label>

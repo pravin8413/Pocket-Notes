@@ -49,8 +49,8 @@ h2 {
     font-size: 3.5rem;
     font-weight: 900;
     padding: 1px 1px;
-    height: 75px;
-    width: 75px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background-color: #16008B;
     color: #ffffff;
@@ -62,7 +62,7 @@ h2 {
     box-shadow: none;
 }
 
-/* .blurred-background {
+.blurred-background {
     opacity: 0.5;
     
-} */
+}

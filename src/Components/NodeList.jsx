@@ -13,11 +13,10 @@ export default function NodeList({ key,title, bgcolor }) {
 
         const { displayTitle, setDisplayTitle,setBcolor,setShow } = useNoteContext();
         
-    console.log(nameInitials)
     const isClicked = displayTitle === title;
 
     const handleClick = ()=>{
-        setDisplayTitle(isClicked ? '' : title);
+        setDisplayTitle(title);
         setBcolor(bgcolor);
         setShow(true);
 

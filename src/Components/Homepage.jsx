@@ -5,7 +5,7 @@ import Note from "./Note"
 
 const Homepage = () => {
 
-    const { show, displayTitle, displayNotes, setDisplayNotes, bcolor } = useNoteContext();
+    const { show, displayTitle, displayNotes, setDisplayNotes, bcolor,isCreateNoteVisible, setCreateNoteVisible } = useNoteContext();
     const nameInitals = (typeof displayTitle === 'string') ? displayTitle.split(" ")
         .map((word) => word.substring(0, 1))
         .join("")
@@ -29,6 +29,7 @@ const Homepage = () => {
 
     const handleClick = () => {
         if (!noteText) {
+            alert("Please enter some text..");
             return;
         }
         setDate(new Date());
@@ -50,7 +51,8 @@ const Homepage = () => {
     };
 
     return (
-        <div className='root'>
+        <div className={`root ${isCreateNoteVisible?'blurred-background':''}`} onClick={()=>
+            isCreateNoteVisible && setCreateNoteVisible(false)}>
             {
                 show ? (
                     <div className='home-container'>

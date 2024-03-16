@@ -12,24 +12,25 @@ export function NoteContextProvider({ children }) {
   const [titles, setTitles] = useState([]);
   const [displayTitle, setDisplayTitle] = useState('');
   const [displayNotes,setDisplayNotes]=useState({});
+  const [isCreateNoteVisible, setCreateNoteVisible] = useState(false);
   const [groupTitles, setGroupTitles] = useState(
     JSON.parse(localStorage.getItem("groupTitles")) || []
 )
 
   const addTitle = ({groupName, bgColor}) => {
-    // console.log("store",groupName,bgColor);
+  
     setTitles((prevTitles) => [...prevTitles, { groupName, bgColor }]);
   };
   
 
-  useEffect(() => {
-    // Load titles from local storage on initial render
-    const storedTitles = localStorage.getItem('noteTitles');
-    if (storedTitles) {
+  // useEffect(() => {
+
+  //   const storedTitles = localStorage.getItem('noteTitles');
+  //   if (storedTitles) {
       
-      setTitles(JSON.parse(storedTitles));
-    }
-  }, []);
+  //     setTitles(JSON.parse(storedTitles));
+  //   }
+  // }, []);
   
   useEffect(() => {
     const storedNotes = localStorage.getItem(displayTitle);
@@ -46,7 +47,7 @@ export function NoteContextProvider({ children }) {
   
 
   return (
-    <NoteContext.Provider value={{ titles,setTitles, addTitle, displayTitle, setDisplayTitle,displayNotes,setDisplayNotes,show,setShow,bcolor,setBcolor,groupTitles, setGroupTitles }}>
+    <NoteContext.Provider value={{ titles,setTitles, addTitle, displayTitle, setDisplayTitle,displayNotes,setDisplayNotes,isCreateNoteVisible, setCreateNoteVisible,show,setShow,bcolor,setBcolor,groupTitles, setGroupTitles }}>
       {children}
     </NoteContext.Provider>
   );

@@ -1,11 +1,10 @@
-.root-container {
+.create-note {
     background-color: #ffffff;
-    width: 28vw;
-    height: 28vh;
+    width: 30vw;
+    height: 30vh;
     position: fixed;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 1rem;
     border-radius: 6px;
     border: 2px solid #CCCCCC;
@@ -17,7 +16,6 @@
     font-weight: 600;
     padding: 20px;
     z-index: 3;
-
 }
 
 .groupName-card {
@@ -54,11 +52,13 @@
     background-color: blue;
     color: #ffffff;
 }
+
 .color-input{
     display: flex;
     flex-direction: row;
     gap: 2.2rem;
 }
+
 .colors-input{
     display: flex;
     flex-direction: row;
@@ -66,6 +66,7 @@
     align-items: center;
     
 }
+
 .color{
     width: 3vh;
   height: 3vh;

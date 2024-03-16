@@ -3,7 +3,7 @@
     /* justify-content: center; */
     align-items: center;
     height: 15vh;
-    width: 26vw;
+    width: 27vw;
     cursor: pointer;
     padding-left: 50px;
     padding-top: 7px;
@@ -15,9 +15,8 @@
 }
 
 .note-title-list.clicked {
-    /* padding: 10px;
-    border-radius: 30% 0% 0% 30%; */
-    background: #f7ecdc;
+    /* background-color: #f7ecdc; */
+    background-color: rgb(193, 190, 190);
 }
 
 .logo {
